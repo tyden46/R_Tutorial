@@ -5,10 +5,12 @@ print('Welcome to R and R Studio')
 #Numbers
 myFavoriteNumber <- 9+12
 print(myFavoriteNumber)
-mySecondFavoriteNumber = 6*2
+mySecondFavoriteNumber = (6*2)-1
 print(mySecondFavoriteNumber)
 
 #Strings (ie. words, characters)
+myFavoriteWord = "Pizza"
+print(myFavoriteWord)
 myFavoriteWords <- "Cheddar" + "Cheese" #wrong
 myFavoriteWords <- paste("Cheddar", "Cheese", sep=" ") #Our first function!
 print(myFavoriteWords)
@@ -25,6 +27,9 @@ print(length(students))
 for(student in students){
   print(paste("Hello", student))
 }
+for(x in students){
+  print(paste("Hello", x))
+}
 
 #Conditional
 for(student in students){
@@ -38,8 +43,10 @@ for(student in students){
 #Let's make a table together!
 columns <- c("Name", "Program", "Home City", "Home State") 
 tyson <- c("Tyson", "Genomics and Bioinformatics", "Queen Creek", "Arizona")
+jaclyn <- c("Jaclyn", "Cancer Biology", "Naugatuck", "Connecticut")
+nathaniel <- c("Nathaniel", "Neuroscience", "Kennett Square", "Pennsylvania")
 #add more students here
-studentTable <- rbind(tyson, ) #add other students
+studentTable <- rbind(tyson, jaclyn, nathaniel) #add other students
 colnames(studentTable)=columns
 
 
